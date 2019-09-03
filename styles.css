@@ -1,2 +1,2 @@
-body { font-family: 'Ubuntu', sans-serif; }
-.main-title { color: #ff0dbf }
+body { font-family: 'Ubuntu', sans-serif; background-color: black;}
+.main-title { color: #ff0dbf; text-align: center; }
