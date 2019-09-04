@@ -4,17 +4,16 @@
 
   /* Add a gray background color with some padding */
   body {
-    font-family: Arial;
+    font-family: 'Ubuntu', sans-serif;
     padding: 20px;
-    background: #3b3b3b;
+    background: #333;
   }
 
   /* Header/Blog Title */
   .header {
     padding: 30px;
-    font-size: 40px;
     text-align: center;
-    background: black;
+    background: #2b2b2b;
     outline-color: #616161;
     color: rgba(87,226,231,0.9);
     text-decoration: none;
@@ -52,9 +51,12 @@
 
   /* Add a card effect for articles */
   .card {
-    background-color: white;
+    background-color: #444;
     padding: 20px;
     margin-top: 20px;
+    color: #ddd;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    border-radius: 10px;
   }
 
   /* Clear floats after the columns */
