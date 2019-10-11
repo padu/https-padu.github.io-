@@ -1,0 +1,40 @@
+cache API - window.caches and cache 
+
+web worker 
+    - script thats run in background seperate from DOM 
+    - web worker does not have access to DOM
+
+service worker 
+    - its a type of web worker
+    - it acts as a network proxy between web browser and server
+    - it will intercepts incoming and outgoing network request
+
+service worker use Cases :
+    - Work offline
+    - Instant load
+    - Receive Push Notification
+    - Background Sync
+
+service worker scope 
+    Available               Not Available
+    - self                  - window     
+    - caches                - document
+    - fetch                 - localstorage    
+
+service worker life cycle
+    1- Parsed
+    2- Installed / Waiting
+    3- Activated
+    4- Redundant
+
+workbox - to efficiently manage caching strategy
+workbox caching strategy 
+    1- Network First
+    2- Cache First
+    3- Stale While Revalidate
+    4- Network Only
+    5- Cache Only
+
+
+Important Links : 
+https://realfavicongenerator.net/
