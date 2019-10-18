@@ -44,385 +44,524 @@
 <body>
 <div id="wrapper">
 
-        <div class="header">
-        	<nav class="navbar  fixed-top navbar-site navbar-light bg-light navbar-expand-md"
-        		 role="navigation">
-        		<div class="container">
-
-                <div class="navbar-identity">
+    <div class="header">
+    	<nav class="navbar navbar-site navbar-light bg-light navbar-expand-md"
+    		 role="navigation">
+    		<div class="container">
 
 
-        			<a href="index.html" class="navbar-brand logo logo-title">
-        			<span class="logo-icon"><i class="icon icon-search-1 ln-shadow-logo "></i>
-        			</span>BOOT<span>CLASSIFIED </span> </a>
+    			<a href="index.html" class="navbar-brand logo logo-title">
+    			<span class="logo-icon"><i class="icon icon-search-1 ln-shadow-logo "></i>
+    			</span>BOOT<span>CLASSIFIED </span> </a>
 
+    			<button
+    					class="flag-menu country-flag d-block d-sm-none btn btn-secondary hidden"
+    					href="#select-country" data-toggle="modal">	<span class="flag-icon flag-icon-us"></span>  <span class="caret"></span>
+    			</button>
 
-        			<button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggler pull-right"
-        					type="button">
-
-        				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg>
-
-
-        			</button>
-
-
-        			<button
-        					class="flag-menu country-flag d-block d-md-none btn btn-secondary hidden pull-right"
-        					href="#select-country" data-toggle="modal">	<span class="flag-icon flag-icon-us"></span>  <span class="caret"></span>
-        			</button>
-
-                </div>
+    			<button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggler"
+    					type="button">	<span class="sr-only">Toggle navigation</span> &#x2630;</button>
 
 
 
-        			<div class="navbar-collapse collapse">
-        				<ul class="nav navbar-nav navbar-left">
-        					<li class="flag-menu country-flag tooltipHere hidden-xs nav-item" data-toggle="tooltip"
-        						data-placement="bottom" title="Select Country">	<a href="#select-country" data-toggle="modal" class="nav-link">
 
-        						<span class="flag-icon flag-icon-us"></span> <span class="caret"></span>
+    			<div class="navbar-collapse collapse">
+    				<ul class="nav navbar-nav navbar-left">
+    					<li class="flag-menu country-flag tooltipHere hidden-xs nav-item" data-toggle="tooltip"
+    						data-placement="bottom" title="Select Country">	<a href="#select-country" data-toggle="modal" class="nav-link">
 
-        					</a>
-        					</li>
-        				</ul>
-        				<ul class="nav navbar-nav ml-auto navbar-right">
-        					<li class="nav-item"><a href="category.html" class="nav-link"><i class="icon-th-thumb"></i> All Ads</a>
-        					</li>
-        					<li class="dropdown no-arrow nav-item"><a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+    						<span class="flag-icon flag-icon-us"></span> <span class="caret"></span>
 
-        						<span>Jhon Doe</span> <i class="icon-user fa"></i> <i class=" icon-down-open-big fa"></i></a>
-        						<ul
-        								class="dropdown-menu user-menu dropdown-menu-right">
-        							<li class="active dropdown-item"><a href="account-home.html"><i class="icon-home"></i> Personal Home
+    					</a>
+    					</li>
+    				</ul>
+    				<ul class="nav navbar-nav ml-auto navbar-right">
+    					<li class="nav-item"><a href="category.html" class="nav-link"><i class="icon-th-thumb"></i> All Ads</a>
+    					</li>
+    					<li class="nav-item"><a href="category.html" class="nav-link"><i class="icon-logout"></i> Signout</a>
+    					</li>
+    					<li class="dropdown no-arrow nav-item"><a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
 
-        							</a>
-        							</li>
-        							<li class="dropdown-item"><a href="account-myads.html"><i class="icon-th-thumb"></i> My ads </a>
-        							</li>
-        							<li class="dropdown-item"><a href="account-favourite-ads.html"><i class="icon-heart"></i> Favourite ads </a>
-        							</li>
-        							<li class="dropdown-item"><a href="account-saved-search.html"><i class="icon-star-circled"></i> Saved search
+    						<span>Jhon Doe</span> <i class="icon-user fa"></i> <i class=" icon-down-open-big fa"></i></a>
+    						<ul
+    								class="dropdown-menu user-menu">
+    							<li class="active dropdown-item"><a href="account-home.html"><i class="icon-home"></i> Personal Home
 
-        							</a>
-        							</li>
-        							<li class="dropdown-item"><a href="account-archived-ads.html"><i class="icon-folder-close"></i> Archived ads
+    							</a>
+    							</li>
+    							<li class="dropdown-item"><a href="account-myads.html"><i class="icon-th-thumb"></i> My ads </a>
+    							</li>
+    							<li class="dropdown-item"><a href="account-favourite-ads.html"><i class="icon-heart"></i> Favourite ads </a>
+    							</li>
+    							<li class="dropdown-item"><a href="account-saved-search.html"><i class="icon-star-circled"></i> Saved search
 
-        							</a>
-        							</li>
-        							<li class="dropdown-item"><a href="account-pending-approval-ads.html"><i class="icon-hourglass"></i> Pending
+    							</a>
+    							</li>
+    							<li class="dropdown-item"><a href="account-archived-ads.html"><i class="icon-folder-close"></i> Archived ads
 
-        								approval </a>
-        							</li>
-        							<li class="dropdown-item"><a href="statements.html"><i class=" icon-money "></i> Payment history </a>
-        							</li>
-        							<li class="dropdown-item"><a href="login.html"><i class=" icon-logout "></i> Log out </a>
-        							</li>
-        						</ul>
-        					</li>
-        					<li class="postadd nav-item"><a class="btn btn-block   btn-border btn-post btn-danger nav-link" href="post-ads.html">Post Free Add</a>
-        					</li>
-        					<li class="dropdown  lang-menu nav-item">
-        						<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
-        							<span class="lang-title">EN</span>
+    							</a>
+    							</li>
+    							<li class="dropdown-item"><a href="account-pending-approval-ads.html"><i class="icon-hourglass"></i> Pending
 
-        						</button>
-        						<ul class="dropdown-menu dropdown-menu-right user-menu" role="menu">
-        							<li class="dropdown-item"><a class="active">
+    								approval </a>
+    							</li>
+    							<li class="dropdown-item"><a href="statements.html"><i class=" icon-money "></i> Payment history </a>
+    							</li>
+    							<li class="dropdown-item"><a href="login.html"><i class=" icon-logout "></i> Log out </a>
+    							</li>
+    						</ul>
+    					</li>
+    					<li class="postadd nav-item"><a class="btn btn-block   btn-border btn-post btn-danger nav-link" href="post-ads.html">Post Free Add</a>
+    					</li>
+    					<li class="dropdown lang-menu nav-item">
+    						<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+    							<span class="lang-title">EN</span>
 
-        								<span class="lang-name">English</span></a>
-        							</li>
-        							<li class="dropdown-item"><a><span class="lang-name">Dutch</span></a>
-        							</li>
-        							<li class="dropdown-item"><a><span class="lang-name">fran&#xE7;ais </span></a>
-        							</li>
-        							<li class="dropdown-item"><a><span class="lang-name">Deutsch</span></a>
-        							</li>
-        							<li class="dropdown-item"><a> <span class="lang-name">Arabic</span></a>
-        							</li>
-        							<li class="dropdown-item"><a><span class="lang-name">Spanish</span></a>
-        							</li>
-        						</ul>
-        					</li>
-        				</ul>
-        			</div>
-        			<!--/.nav-collapse -->
-        		</div>
-        		<!-- /.container-fluid -->
-        	</nav>
-        </div>
-        <!-- /.header -->
+    						</button>
+    						<ul class="dropdown-menu user-menu" role="menu">
+    							<li class="dropdown-item"><a class="active">
 
-        <label class="theme-switcher theme-switcher-left-right">
-        	<span class="theme-switcher-label" data-on="Dark Off" data-off="Dark Mode"></span>
-        	<span class="theme-switcher-handle"></span>
-        </label>
-
-
-    <div class="intro-inner">
-        <div class="contact-intro">
-            <div class="w100 map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d26081603.294420466!2d-95.677068!3d37.06250000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1423809000824"
-                        width="100%" height="350" frameborder="0" style="border:0"></iframe>
-            </div>
-        </div>
-        <!--/.contact-intro || map end-->
-
+    								<span class="lang-name">English</span></a>
+    							</li>
+    							<li class="dropdown-item"><a><span class="lang-name">Dutch</span></a>
+    							</li>
+    							<li class="dropdown-item"><a><span class="lang-name">fran&#xE7;ais </span></a>
+    							</li>
+    							<li class="dropdown-item"><a><span class="lang-name">Deutsch</span></a>
+    							</li>
+    							<li class="dropdown-item"><a> <span class="lang-name">Arabic</span></a>
+    							</li>
+    							<li class="dropdown-item"><a><span class="lang-name">Spanish</span></a>
+    							</li>
+    						</ul>
+    					</li>
+    				</ul>
+    			</div>
+    			<!--/.nav-collapse -->
+    		</div>
+    		<!-- /.container-fluid -->
+    	</nav>
     </div>
-    <!-- /.intro-inner -->
+    <!-- /.header -->
+    <!-- /.header -->
 
     <div class="main-container">
         <div class="container">
-            <div class="row clearfix">
-                <div class="col-md-4">
-                    <div class="contact_info">
-                        <h5 class="list-title gray"><strong>Contact us</strong></h5>
+            <div class="row">
+                <div class="col-md-3 page-sidebar">
+                    <aside>
+                        <div class="inner-box">
+                            <div class="user-panel-sidebar">
+                                <div class="collapse-box">
+                                    <h5 class="collapse-title no-border"> My Classified <a class="pull-right"
+                                                                                           aria-expanded="true"  data-toggle="collapse"
+                                                                                           href="#MyClassified"><i
+                                            class="fa fa-angle-down"></i></a></h5>
 
-                        <div class="contact-info ">
-                            <div class="address">
-                                <p class="p1">220 Fifth Ave</p>
+                                    <div id="MyClassified" class="panel-collapse collapse show">
+                                        <ul class="acc-list">
+                                            <li><a href="account-home.html"><i class="icon-home"></i> Personal Home </a>
+                                            </li>
 
-                                <p class="p1">2nd Flr. New York, NY 10001 </p>
-
-                                <p>Email: info@@demos.org</p>
-
-                                <p>Toll Free: 212-633-1405</p>
-
-                                <p>&nbsp;</p>
-
-                                <div>
-
-                                    <p><strong><a href="#">Get a Quote</a></strong></p>
-
-                                    <p><strong> <a href="login.html">Client Area Login</a></strong></p>
-
-                                    <p><strong> <a href="#skypeid" class="skype">Live Chat</a></strong></p>
-
-                                    <p><strong> <a href="faq.html">Knowledge Base</a></strong></p>
-
+                                        </ul>
+                                    </div>
                                 </div>
+                                <!-- /.collapse-box  -->
+                                <div class="collapse-box">
+                                    <h5 class="collapse-title"> My Ads <a class="pull-right" aria-expanded="true"  data-toggle="collapse"
+                                                                          href="#MyAds"><i class="fa fa-angle-down"></i></a>
+                                    </h5>
+
+                                    <div id="MyAds" class="panel-collapse collapse show">
+                                        <ul class="acc-list">
+                                            <li><a href="account-myads.html"><i class="icon-docs"></i> My ads <span
+                                                    class="badge">42</span> </a></li>
+                                            <li><a href="account-favourite-ads.html"><i class="icon-heart"></i>
+                                                Favourite ads <span class="badge badge-secondary">42</span> </a></li>
+                                            <li><a href="account-saved-search.html"><i class="icon-star-circled"></i>
+                                                Saved search <span class="badge badge-secondary">42</span> </a></li>
+                                            <li><a href="account-archived-ads.html"><i class="icon-folder-close"></i>
+                                                Archived ads <span class="badge badge-secondary">12</span></a></li>
+                                            <li><a href="account-pending-approval-ads.html"><i
+                                                    class="icon-hourglass"></i> Pending approval <span
+                                                    class="badge">42</span></a></li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!-- /.collapse-box  -->
+                                <div class="collapse-box">
+                                    <h5 class="collapse-title"> Terminate Account <a class="pull-right"
+                                                                                     aria-expanded="true"  data-toggle="collapse"
+                                                                                     href="#TerminateAccount"><i
+                                            class="fa fa-angle-down"></i></a></h5>
+
+                                    <div id="TerminateAccount" class="panel-collapse collapse show">
+                                        <ul class="acc-list">
+                                            <li><a href="account-close.html"><i class="icon-cancel-circled "></i> Close
+                                                account </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- /.collapse-box  -->
                             </div>
                         </div>
+                        <!-- /.inner-box  -->
 
-                        <div class="social-list"><a target="_blank" href="https://twitter.com/"><i
-                                class="fa fa-twitter fa-lg "></i></a>
-                            <a target="_blank" href="https://www.facebook.com/"><i
-                                    class="fa fa-facebook fa-lg "></i></a>
-                            <a target="_blank" href="https://plus.google.com"><i
-                                    class="fa fa-google-plus fa-lg "></i></a>
-                            <a target="_blank" href="https://www.pinterest.com/"><i class="fa fa-pinterest fa-lg "></i></a>
+                    </aside>
+                </div>
+                <!--/.page-sidebar-->
+
+                <div class="col-md-9 page-content">
+                    <div class="inner-box">
+                        <h2 class="title-2"><i class="icon-money"></i> View Transactions </h2>
+
+                        <div style="clear:both"></div>
+
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead>
+                                <tr>
+                                    <th><span> ID</span></th>
+                                    <th>Description</th>
+                                    <th><strong>Payment Method</strong></th>
+                                    <th> Value</th>
+                                    <th> Date</th>
+                                    <th> Status</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>#01PA</td>
+                                    <td> Ad Fees - Pay for a single ad <br>
+                                        <strong>Ads Type</strong> Premium <br>
+
+                                        <strong>Ads Duration</strong> 30 Days
+                                    </td>
+                                    <td>Paid by Mastercard <br> MasterCard. 52008282XXXX
+
+
+                                    </td>
+
+                                    <td>$40</td>
+                                    <td>02/21/2016 08:56</td>
+                                    <td><span class="label label-success">Done</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#02PA</td>
+                                    <td><p>Ad Fees - Pay for a single ad<br>
+                                        <strong>Ads Type</strong> Premium <br>
+
+                                        <strong>Ads Duration</strong> 30 Days</p>
+                                    </td>
+                                    <td>Paid by Mastercard <br> MasterCard. 52008282XXXX
+
+
+                                    </td>
+                                    <td>$40</td>
+                                    <td>02/21/2016 08:56</td>
+                                    <td><span class="label label-success">Done</span>
+                                    </td>
+                                </tr>
+
+
+                                <tr>
+                                    <td>#03PA</td>
+                                    <td><p>Ad Fees - Pay for a single ad<br>
+                                        <strong>Ads Type</strong> Premium <br>
+
+                                        <strong>Ads Duration</strong> 30 Days</p>
+                                    </td>
+                                    <td> Pending payments
+
+
+                                    </td>
+                                    <td>$40</td>
+                                    <td>03/31/2016 11:25</td>
+                                    <td><span class="label label-info">Pending </span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>#01PA</td>
+                                    <td>Ad Fees - Pay for a single ad <br>
+                                        <strong>Ads Type</strong> Premium <br>
+
+                                        <strong>Ads Duration</strong> 30 Days
+                                    </td>
+                                    <td>Paid by Mastercard <br> MasterCard. 52008282XXXX
+
+
+                                    </td>
+
+                                    <td>$40</td>
+                                    <td>03/31/2016 11:25</td>
+                                    <td><span class="label label-success">Done</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#02PA</td>
+                                    <td><p>Ad Fees - Pay for a single ad<br>
+                                        <strong>Ads Type</strong> Premium <br>
+
+                                        <strong>Ads Duration</strong> 30 Days</p>
+                                    </td>
+                                    <td>Paid by Mastercard <br> MasterCard. 52008282XXXX
+
+
+                                    </td>
+                                    <td>$40</td>
+                                    <td>03/29/2016 11:39</td>
+                                    <td><span class="label label-success">Done</span>
+                                    </td>
+                                </tr>
+
+
+                                <tr>
+                                    <td>#03PA</td>
+                                    <td><p>Ad Fees - Pay for a single ad<br>
+                                        <strong>Ads Type</strong> Premium <br>
+
+                                        <strong>Ads Duration</strong> 30 Days</p>
+                                    </td>
+                                    <td> Pending payments
+
+
+                                    </td>
+                                    <td>$40</td>
+                                    <td>03/20/2016 18:00</td>
+                                    <td><span class="label label-info">Pending </span>
+                                    </td>
+                                </tr>
+
+
+                                <tr>
+                                    <td>#01PA</td>
+                                    <td>Ad Fees - Pay for a single ad <br>
+                                        <strong>Ads Type</strong> Premium <br>
+
+                                        <strong>Ads Duration</strong> 30 Days
+                                    </td>
+                                    <td>Paid by Mastercard <br> MasterCard. 52008282XXXX
+
+
+                                    </td>
+
+                                    <td>$40</td>
+                                    <td>03/17/2016 10:17</td>
+                                    <td><span class="label label-success">Done</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#02PA</td>
+                                    <td><p>Ad Fees - Pay for a single ad<br>
+                                        <strong>Ads Type</strong> Premium <br>
+
+                                        <strong>Ads Duration</strong> 30 Days</p>
+                                    </td>
+                                    <td>Paid by Mastercard <br> MasterCard. 52008282XXXX
+
+
+                                    </td>
+                                    <td>$40</td>
+                                    <td>03/17/2016 10:17</td>
+                                    <td><span class="label label-success">Done</span>
+                                    </td>
+                                </tr>
+
+
+                                <tr>
+                                    <td>#03PA</td>
+                                    <td><p>Ad Fees - Pay for a single ad<br>
+                                        <strong>Ads Type</strong> Premium <br>
+
+                                        <strong>Ads Duration</strong> 30 Days</p>
+                                    </td>
+                                    <td> Pending payments
+
+
+                                    </td>
+                                    <td>$40</td>
+                                    <td>03/15/2016 12:17</td>
+                                    <td><span class="label label-info">Pending </span>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
                         </div>
+
+                        <div style="clear:both"></div>
+
                     </div>
                 </div>
-                <div class="col-md-8">
-                    <div class="contact-form">
-                        <h5 class="list-title gray"><strong>Contact us</strong></h5>
-
-
-                        <form class="form-horizontal" method="post">
-                            <fieldset>
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                                <input id="firstname" name="name" type="text" placeholder="First Name"
-                                                       class="form-control">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                                <input id="lastname" name="name" type="text" placeholder="Last  Name"
-                                                       class="form-control">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                                <input id="companyname" name="name" type="text"
-                                                       placeholder="Company Name" class="form-control">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                                <input id="email" name="email" type="text" placeholder="Email Address"
-                                                       class="form-control">
-                                        </div>
-                                    </div>
-
-
-                                    <div class="col-xl-12">
-                                        <div class="form-group">
-                                                <textarea class="form-control" id="message" name="message"
-                                                          placeholder="Enter your massage for us here. We will get back to you within 2 business days."
-                                                          rows="7"></textarea>
-                                        </div>
-
-
-                                        <div class="form-group">
-                                                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
-                                        </div>
-
-
-                                    </div>
-
-                                </div>
-
-
-                            </fieldset>
-                        </form>
-                    </div>
-                </div>
+                <!--/.page-content-->
             </div>
+            <!--/.row-->
         </div>
+        <!--/.container-->
     </div>
     <!-- /.main-container -->
 
+<footer class="main-footer">
+	<div class="footer-content">
+		<div class="container">
+			<div class="row">
+
+				<div class=" col-xl-2 col-xl-2 col-md-2 col-6  ">
+					<div class="footer-col">
+						<h4 class="footer-title">About us</h4>
+						<ul class="list-unstyled footer-nav">
+							<li><a href="#">About Company</a></li>
+							<li><a href="#">For Business</a></li>
+							<li><a href="#">Our Partners</a></li>
+							<li><a href="#">Press Contact</a></li>
+							<li><a href="#">Careers</a></li>
+							<li><a href="event-home.html">Events</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class=" col-xl-2 col-xl-2 col-md-2 col-6  ">
+					<div class="footer-col">
+						<h4 class="footer-title">Help & Contact</h4>
+						<ul class="list-unstyled footer-nav">
+							<li><a href="#">
+								Stay Safe Online
+							</a></li>
+							<li><a href="#">
+								How to Sell</a></li>
+							<li><a href="#">
+								How to Buy
+							</a></li>
+							<li><a href="#">Posting Rules
+							</a></li>
+
+							<li><a href="#">
+								Promote Your Ad
+							</a></li>
+
+						</ul>
+					</div>
+				</div>
+
+				<div class=" col-xl-2 col-xl-2 col-md-2 col-6  ">
+					<div class="footer-col">
+						<h4 class="footer-title">More From Us</h4>
+						<ul class="list-unstyled footer-nav">
+							<li><a href="faq.html">FAQ
+							</a></li>
+							<li><a href="blogs.html">Blog
+							</a></li>
+							<li><a href="#">
+								Popular Searches
+							</a></li>
+							<li><a href="#"> Site Map
+							</a></li>
+							<li><a href="#"> Customer Reviews
+						</a></li>
 
 
-    <footer class="main-footer">
-    	<div class="footer-content">
-    		<div class="container">
-    			<div class="row">
+						</ul>
+					</div>
+				</div>
+				<div class=" col-xl-2 col-xl-2 col-md-2 col-6  ">
+					<div class="footer-col">
+						<h4 class="footer-title">Account</h4>
+						<ul class="list-unstyled footer-nav">
+							<li><a href="account-home.html"> Manage Account
+							</a></li>
+							<li><a href="login.html">Login
+							</a></li>
+							<li><a href="signup.html">Register
+							</a></li>
+							<li><a href="account-myads.html"> My ads
+							</a></li>
+							<li><a href="seller-profile.html"> Profile
+							</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class=" col-xl-4 col-xl-4 col-md-4 col-12">
+					<div class="footer-col row">
 
-    				<div class=" col-xl-2 col-xl-2 col-md-2 col-6  ">
-    					<div class="footer-col">
-    						<h4 class="footer-title">About us</h4>
-    						<ul class="list-unstyled footer-nav">
-    							<li><a href="#">About Company</a></li>
-    							<li><a href="#">For Business</a></li>
-    							<li><a href="#">Our Partners</a></li>
-    							<li><a href="#">Press Contact</a></li>
-    							<li><a href="#">Careers</a></li>
-    							<li><a href="event-home.html">Events</a></li>
-    						</ul>
-    					</div>
-    				</div>
+						<div class="col-sm-12 col-xs-6 col-xxs-12 no-padding-lg">
+							<div class="mobile-app-content">
+								<h4 class="footer-title">Mobile Apps</h4>
+								<div class="row ">
+									<div class="col-6  ">
+										<a class="app-icon" target="_blank"  href="https://itunes.apple.com/">
+											<span class="hide-visually">iOS app</span>
+											<img src="images/site/app_store_badge.svg" alt="Available on the App Store">
+										</a>
+									</div>
+									<div class="col-6  ">
+										<a class="app-icon"  target="_blank" href="https://play.google.com/store/">
+											<span class="hide-visually">Android App</span>
+											<img src="images/site/google-play-badge.svg" alt="Available on the App Store">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
 
-    				<div class=" col-xl-2 col-xl-2 col-md-2 col-6  ">
-    					<div class="footer-col">
-    						<h4 class="footer-title">Help & Contact</h4>
-    						<ul class="list-unstyled footer-nav">
-    							<li><a href="#">
-    								Stay Safe Online
-    							</a></li>
-    							<li><a href="#">
-    								How to Sell</a></li>
-    							<li><a href="#">
-    								How to Buy
-    							</a></li>
-    							<li><a href="#">Posting Rules
-    							</a></li>
+						<div class="col-sm-12 col-xs-6 col-xxs-12 no-padding-lg">
+							<div class="hero-subscribe">
+								<h4 class="footer-title no-margin">Follow us on</h4>
+								<ul class="list-unstyled list-inline footer-nav social-list-footer social-list-color footer-nav-inline">
+									<li><a class="icon-color fb" title="Facebook" data-placement="top" data-toggle="tooltip" href="#"><i class="fab fa-facebook-f"></i> </a></li>
+									<li><a class="icon-color tw" title="Twitter" data-placement="top" data-toggle="tooltip" href="#"><i class="fab fa-twitter"></i> </a></li>
+									<li><a class="icon-color gp" title="Google+" data-placement="top" data-toggle="tooltip" href="#"><i class="fab fa-google-plus-g"></i> </a></li>
+									<li><a class="icon-color lin" title="Linkedin" data-placement="top" data-toggle="tooltip" href="#"><i class="fab fa-linkedin"></i> </a></li>
+									<li><a class="icon-color pin" title="Linkedin" data-placement="top" data-toggle="tooltip" href="#"><i class="fab fa-pinterest-p"></i> </a></li>
+								</ul>
+							</div>
 
-    							<li><a href="#">
-    								Promote Your Ad
-    							</a></li>
+						</div>
+					</div>
+				</div>
+				<div style="clear: both"></div>
 
-    						</ul>
-    					</div>
-    				</div>
+				<div class="col-xl-12">
+					<div class=" text-center paymanet-method-logo">
 
-    				<div class=" col-xl-2 col-xl-2 col-md-2 col-6  ">
-    					<div class="footer-col">
-    						<h4 class="footer-title">More From Us</h4>
-    						<ul class="list-unstyled footer-nav">
-    							<li><a href="faq.html">FAQ
-    							</a></li>
-    							<li><a href="blogs.html">Blog
-    							</a></li>
-    							<li><a href="#">
-    								Popular Searches
-    							</a></li>
-    							<li><a href="#"> Site Map
-    							</a></li>
-    							<li><a href="#"> Customer Reviews
-    						</a></li>
+						<img src="images/site/payment/master_card.png" alt="img">
+						<img alt="img" src="images/site/payment/visa_card.png">
+						<img alt="img" src="images/site/payment/paypal.png">
+						<img alt="img" src="images/site/payment/american_express_card.png"> <img alt="img" src="images/site/payment/discover_network_card.png">
+						<img alt="img" src="images/site/payment/google_wallet.png">
+					</div>
 
+					<div class="copy-info text-center">
+						&copy; 2017 BootClassified. All Rights Reserved.
+					</div>
 
-    						</ul>
-    					</div>
-    				</div>
-    				<div class=" col-xl-2 col-xl-2 col-md-2 col-6  ">
-    					<div class="footer-col">
-    						<h4 class="footer-title">Account</h4>
-    						<ul class="list-unstyled footer-nav">
-    							<li><a href="account-home.html"> Manage Account
-    							</a></li>
-    							<li><a href="login.html">Login
-    							</a></li>
-    							<li><a href="signup.html">Register
-    							</a></li>
-    							<li><a href="account-myads.html"> My ads
-    							</a></li>
-    							<li><a href="seller-profile.html"> Profile
-    							</a></li>
-    						</ul>
-    					</div>
-    				</div>
-    				<div class=" col-xl-4 col-xl-4 col-md-4 col-12">
-    					<div class="footer-col row">
+				</div>
 
-    						<div class="col-sm-12 col-xs-6 col-xxs-12 no-padding-lg">
-    							<div class="mobile-app-content">
-    								<h4 class="footer-title">Mobile Apps</h4>
-    								<div class="row ">
-    									<div class="col-6  ">
-    										<a class="app-icon" target="_blank"  href="https://itunes.apple.com/">
-    											<span class="hide-visually">iOS app</span>
-    											<img src="images/site/app_store_badge.svg" alt="Available on the App Store">
-    										</a>
-    									</div>
-    									<div class="col-6  ">
-    										<a class="app-icon"  target="_blank" href="https://play.google.com/store/">
-    											<span class="hide-visually">Android App</span>
-    											<img src="images/site/google-play-badge.svg" alt="Available on the App Store">
-    										</a>
-    									</div>
-    								</div>
-    							</div>
-    						</div>
+			</div>
+		</div>
+	</div>
+</footer>
+    <!--/.footer-->
 
-    						<div class="col-sm-12 col-xs-6 col-xxs-12 no-padding-lg">
-    							<div class="hero-subscribe">
-    								<h4 class="footer-title no-margin">Follow us on</h4>
-    								<ul class="list-unstyled list-inline footer-nav social-list-footer social-list-color footer-nav-inline">
-    									<li><a class="icon-color fb" title="Facebook" data-placement="top" data-toggle="tooltip" href="#"><i class="fab fa-facebook-f"></i> </a></li>
-    									<li><a class="icon-color tw" title="Twitter" data-placement="top" data-toggle="tooltip" href="#"><i class="fab fa-twitter"></i> </a></li>
-    									<li><a class="icon-color gp" title="Google+" data-placement="top" data-toggle="tooltip" href="#"><i class="fab fa-google-plus-g"></i> </a></li>
-    									<li><a class="icon-color lin" title="Linkedin" data-placement="top" data-toggle="tooltip" href="#"><i class="fab fa-linkedin"></i> </a></li>
-    									<li><a class="icon-color pin" title="Linkedin" data-placement="top" data-toggle="tooltip" href="#"><i class="fab fa-pinterest-p"></i> </a></li>
-    								</ul>
-    							</div>
-
-    						</div>
-    					</div>
-    				</div>
-    				<div style="clear: both"></div>
-
-    				<div class="col-xl-12">
-    					<div class=" text-center paymanet-method-logo">
-
-    						<img src="images/site/payment/master_card.png" alt="img">
-    						<img alt="img" src="images/site/payment/visa_card.png">
-    						<img alt="img" src="images/site/payment/paypal.png">
-    						<img alt="img" src="images/site/payment/american_express_card.png"> <img alt="img" src="images/site/payment/discover_network_card.png">
-    						<img alt="img" src="images/site/payment/google_wallet.png">
-    					</div>
-
-    					<div class="copy-info text-center">
-    						&copy; 2017 BootClassified. All Rights Reserved.
-    					</div>
-
-    				</div>
-
-    			</div>
-    		</div>
-    	</div>
-    </footer>
-    <!-- /.footer -->
 </div>
 <!-- /.wrapper -->
 
 
+
+<!-- Le javascript
+================================================== -->
+
+<!-- Placed at the end of the document so the pages load faster -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="assets/js/jquery/jquery-3.3.1.min.js">\x3C/script>')</script>
+<script src="assets/bootstrap/js/bootstrap.bundle.js"></script>
+<script src="assets/js/vendors.min.js"></script>
+
+<!-- include custom script for site  -->
+<script src="assets/js/main.min.js"></script>
 
 <!-- Modal Change City -->
 
@@ -1573,19 +1712,141 @@
 </div>
 
 <!-- /.modal -->
+<!-- Modal Change City -->
 
-<!-- Le javascript
-================================================== -->
+<div class="modal fade modalHasList" id="selectRegion" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+	 aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title" id="exampleModalLabel"><i class=" icon-map"></i> Select your region </h4>
 
-<!-- Placed at the end of the document so the pages load faster -->
+				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span
+						class="sr-only">Close</span></button>
+			</div>
+			<div class="modal-body">
+				<div class="row">
+					<div class="col-sm-12">
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="assets/js/jquery/jquery-3.3.1.min.js">\x3C/script>')</script>
-<script src="assets/bootstrap/js/bootstrap.bundle.js"></script>
-<script src="assets/js/vendors.min.js"></script>
+						<p>Popular cities in <strong>New York</strong>
+						</p>
 
-<!-- include custom script for site  -->
-<script src="assets/js/main.min.js"></script>
+						<div style="clear:both"></div>
+						<div class="col-sm-6 no-padding">
+							<select class="form-control selecter  " id="region-state" name="region-state">
+								<option value="">All States/Provinces</option>
+								<option value="Alabama">Alabama</option>
+								<option value="Alaska">Alaska</option>
+								<option value="Arizona">Arizona</option>
+								<option value="Arkansas">Arkansas</option>
+								<option value="California">California</option>
+								<option value="Colorado">Colorado</option>
+								<option value="Connecticut">Connecticut</option>
+								<option value="Delaware">Delaware</option>
+								<option value="District of Columbia">District of Columbia</option>
+								<option value="Florida">Florida</option>
+								<option value="Georgia">Georgia</option>
+								<option value="Hawaii">Hawaii</option>
+								<option value="Idaho">Idaho</option>
+								<option value="Illinois">Illinois</option>
+								<option value="Indiana">Indiana</option>
+								<option value="Iowa">Iowa</option>
+								<option value="Kansas">Kansas</option>
+								<option value="Kentucky">Kentucky</option>
+								<option value="Louisiana">Louisiana</option>
+								<option value="Maine">Maine</option>
+								<option value="Maryland">Maryland</option>
+								<option value="Massachusetts">Massachusetts</option>
+								<option value="Michigan">Michigan</option>
+								<option value="Minnesota">Minnesota</option>
+								<option value="Mississippi">Mississippi</option>
+								<option value="Missouri">Missouri</option>
+								<option value="Montana">Montana</option>
+								<option value="Nebraska">Nebraska</option>
+								<option value="Nevada">Nevada</option>
+								<option value="New Hampshire">New Hampshire</option>
+								<option value="New Jersey">New Jersey</option>
+								<option value="New Mexico">New Mexico</option>
+								<option selected value="New York">New York</option>
+								<option value="North Carolina">North Carolina</option>
+								<option value="North Dakota">North Dakota</option>
+								<option value="Ohio">Ohio</option>
+								<option value="Oklahoma">Oklahoma</option>
+								<option value="Oregon">Oregon</option>
+								<option value="Pennsylvania">Pennsylvania</option>
+								<option value="Rhode Island">Rhode Island</option>
+								<option value="South Carolina">South Carolina</option>
+								<option value="South Dakota">South Dakota</option>
+								<option value="Tennessee">Tennessee</option>
+								<option value="Texas">Texas</option>
+								<option value="Utah">Utah</option>
+								<option value="Vermont">Vermont</option>
+								<option value="Virgin Islands">Virgin Islands</option>
+								<option value="Virginia">Virginia</option>
+								<option value="Washington">Washington</option>
+								<option value="West Virginia">West Virginia</option>
+								<option value="Wisconsin">Wisconsin</option>
+								<option value="Wyoming">Wyoming</option>
+							</select>
+						</div>
+						<div style="clear:both"></div>
+
+						<hr class="hr-thin">
+					</div>
+					<div class="col-md-4">
+						<ul class="list-link list-unstyled">
+							<li><a href="#" title="">All Cities</a></li>
+							<li><a href="#" title="Albany">Albany</a></li>
+							<li><a href="#" title="Altamont">Altamont</a></li>
+							<li><a href="#" title="Amagansett">Amagansett</a></li>
+							<li><a href="#" title="Amawalk">Amawalk</a></li>
+							<li><a href="#" title="Bellport">Bellport</a></li>
+							<li><a href="#" title="Centereach">Centereach</a></li>
+							<li><a href="#" title="Chappaqua">Chappaqua</a></li>
+							<li><a href="#" title="East Elmhurst">East Elmhurst</a></li>
+							<li><a href="#" title="East Greenbush">East Greenbush</a></li>
+							<li><a href="#" title="East Meadow">East Meadow</a></li>
+
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<ul class="list-link list-unstyled">
+							<li><a href="#" title="Elmont">Elmont</a></li>
+							<li><a href="#" title="Elmsford">Elmsford</a></li>
+							<li><a href="#" title="Farmingville">Farmingville</a></li>
+							<li><a href="#" title="Floral Park">Floral Park</a></li>
+							<li><a href="#" title="Flushing">Flushing</a></li>
+							<li><a href="#" title="Fonda">Fonda</a></li>
+							<li><a href="#" title="Freeport">Freeport</a></li>
+							<li><a href="#" title="Fresh Meadows">Fresh Meadows</a></li>
+							<li><a href="#" title="Fultonville">Fultonville</a></li>
+							<li><a href="#" title="Gansevoort">Gansevoort</a></li>
+							<li><a href="#" title="Garden City">Garden City</a></li>
+
+
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<ul class="list-link list-unstyled">
+							<li><a href="#" title="Oceanside">Oceanside</a></li>
+							<li><a href="#" title="Orangeburg">Orangeburg</a></li>
+							<li><a href="#" title="Orient">Orient</a></li>
+							<li><a href="#" title="Ozone Park">Ozone Park</a></li>
+							<li><a href="#" title="Palatine Bridge">Palatine Bridge</a></li>
+							<li><a href="#" title="Patterson">Patterson</a></li>
+							<li><a href="#" title="Pearl River">Pearl River</a></li>
+							<li><a href="#" title="Peekskill">Peekskill</a></li>
+							<li><a href="#" title="Pelham">Pelham</a></li>
+							<li><a href="#" title="Penn Yan">Penn Yan</a></li>
+							<li><a href="#" title="Peru">Peru</a></li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
 </body>
 </html>
