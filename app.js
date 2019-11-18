@@ -23,7 +23,7 @@ window.addEventListener('load', e => {
 })
 
 async function  updateAdvertisements(locId = defaultLoc.Id) {
-    const res = await fetch(`${appDomain}/Api/ClassifyAdvertisement/GetClassifyAdvertisementsByLocation?locationId=${locId}&pageIndex=${pageIndex}}`);
+    const res = await fetch(`${appDomain}/Api/ClassifyAdvertisement/GetClassifyAdvertisementsByLocation?locationId=${locId}&pageIndex=${pageIndex}`);
     const data = await res.json();
 
     adsWrapper.innerHTML = data.Results.$values.map(createAdvertisement).join('\n');
