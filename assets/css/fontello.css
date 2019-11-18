@@ -532,7 +532,7 @@
 
 /* '' */
 .icon-search-1:before {
-    content: '\e860';
+    background-image: url('../favicons/mstile-150x150.png');
 }
 
 /* '' */

@@ -1,6 +1,7 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "Choty Jahirati",
+    "short_name": "Choja",
+    "start_url":"http://localhost:8080/",
     "icons": [
         {
             "src": "/assets/favicons/android-chrome-192x192.png",
